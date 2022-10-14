@@ -1,15 +1,15 @@
 import numpy as np
 import pandas as pd
-from flask import Flask, render_template, request, Markup
-import config
+# from flask import Flask, render_template, request, Markup
+# import config
 import requests
 
 import pickle
 import io
-import torch
-from torchvision import transforms
+# import torch
+# from torchvision import transforms
 from PIL import Image
-crop_recommendation_model_path = 'model/RandomForest.pkl'
+crop_recommendation_model_path = '/Users/Riddhi/Documents/GitHub/BE Major Project/src/Crop_Prediction'
 crop_recommendation_model = pickle.load(open(crop_recommendation_model_path, 'rb'))
 city = input("Enter the City: ")
 N = int(input("Enter the Nitrogen value: "))
